@@ -1,0 +1,26 @@
+Note:
+
+The data for this project is proprietary and can only be used by the permission of AIST. 
+
+Please refer to this website to request access (url & password needed to access upon receipt).
+
+ETLCDB data request - http://etlcdb.db.aist.go.jp/download-request
+
+
+----------------------------------
+Anyone who wants to obtain copies of Database must agree the Conditions of Use and fill the Registration Form.
+
+Conditions of Use
+[Definition] The ETL Character Database (hereinafter referred to as “Database”) is composed of 9 datasets of scanned images of handwritten and printed characters supplied formerly by the Electrotechnical Laboratory (ETL) and currently by its reorganized successor the National Institute of Advanced Industrial Science and Technology (AIST).
+
+[Copyright] AIST retain the copyright of Database.
+
+[Usage] Use of Database is allowed for free only for non-commercial purpose of the registered user. Commercial use should require negotiation of condition.
+
+[Reference] Publication referring to and including any part of Database should be indicated by the term ETL Character Database (or ETL-n Character Database for specific dataset where n stands for the relevant dataset number) with the reference: Electrotechnical Laboratory, Japanese Technical Committee for Optical Character Recognition, ETL Character Database, 1973-1984.
+
+[Distribution] Distribution of Database should only be made through this web site. A person who obtained Database in other ways, usage of Database is allowed upon registration. Unauthorized distribution and publication of the data itself and/or direct URL links to data files are prohibited.
+
+[Privacy Policy] The registered information is used for notification about Database and analysis of the usage of Database. A request for disclosure of information gathered by this site may be made in accordance with Japanese laws and regulations. In the event of such a request, no personal information will be disclosed to third party unless the individual concerned has agreed to such disclosure or other special circumstances apply.
+
+[Responsibility] AIST accepts no responsibility for any adverse effects as a result from downloading files of Database.

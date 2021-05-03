@@ -1,0 +1,2 @@
+Logs for kanji are located in the kanji folder. Can be opened in Tensorboard for notebook or via
+command line.
