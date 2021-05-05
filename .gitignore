@@ -134,5 +134,3 @@ data/**
 
 # Models Folder
 models/**
-!hiragana_model.h5
-!katakana_model.h5
