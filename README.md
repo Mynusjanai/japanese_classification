@@ -1,4 +1,4 @@
-# Japanese Character Image Recognition
+# Japanese Character Image Classification
 ![Genji](./img/murasaki_genji_hiroshige.jpg)
 Author: Chaz Frazer<br>
 
