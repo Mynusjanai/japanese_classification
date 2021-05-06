@@ -134,3 +134,6 @@ data/**
 
 # Models Folder
 models/**
+
+# Sub Functions Folder
+sub_funtions/**
