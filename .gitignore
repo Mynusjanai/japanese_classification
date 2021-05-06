@@ -134,6 +134,8 @@ data/**
 
 # Models Folder
 models/**
+!model_info.txt
 
 # Sub Functions Folder
 sub_funtions/**
+!sub_functions_info.txt

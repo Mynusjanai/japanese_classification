@@ -1,0 +1,2 @@
+Model files are too large to host on Github, even in a compressed file format. Please reach out to 
+the author if you would like access to the pre-trained model.
