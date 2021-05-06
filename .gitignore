@@ -138,4 +138,5 @@ models/**
 
 # Sub Functions Folder
 sub_funtions/**
+sub_functions.py
 !sub_functions_info.txt
