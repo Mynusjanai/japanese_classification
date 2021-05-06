@@ -82,7 +82,7 @@ After modeling each writing system, and experimenting with various parameters an
 |Training   |12 layers, 8,491,555 parameters|99.79%         |0.68%           |
 |Validation |                               |99.40%         |3.2%            |
 |Test       |                               |99.73%         |0.9%            | 
-<br><br>
+
 
 #### Best Performing Model Architecture<br>
 ![layers](./img/horizontal_live_model_cnn_train_layers.png)<br><br>
