@@ -50,7 +50,7 @@ Each writer wrote 10 sheets (genkouyoushi) per data set.<br>
 8199 records<br>
 152,878,411 unique handwritten kanji (shared with hiragana chars in the same files)<br>
 
-<b>Katakana (ETL 1):<b><br>
+<b>Katakana (ETL 1):</b><br>
 46 katakana characters (46 unique, dipthongs not included as they are phonetically identical to hiragana)<br>
 1411 writers<br>
 2052 records<br>
@@ -63,7 +63,7 @@ The data was read in from binary, sorted and then saved to an npz file for furth
     
 
 # Feature Engineering
-The data was resized to 64x64 pixels for our CNN model to read over. A Tensorflow's ImageDataGenerator filter was put over the images at random to create variability in our data to reduce the chance of our model overfitting.<br>
+The data was resized to 64x64 pixels for our CNN model to read over. A Tensorflow's ImageDataGenerator filter was put over the images at random to create variability in our data to reduce the chance of our model overfitting.<br><br>
 
 
 # Modeling & Results
