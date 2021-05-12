@@ -116,6 +116,5 @@ After modeling each writing system, and experimenting with various parameters an
 ├── trials
 ├── .gitignore
 ├── README.md
-├── japanese_classification.ipynb
-├── japanese_models.ipynb    
-└── mvp_presentation.pdf
+├── japanese_classification.ipynb   
+└── japanese_character_classification.pdf
