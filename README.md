@@ -7,7 +7,7 @@ This project is designed to take image recognition of Japanese characters, and c
 
 The project looks to accurately predict across the three main Japanese language writing systems (Kanji, Hiragana, Katakana) - used in Japan for over a thousand years since the 8th century.<br>
 
-The data is from the ETL Character Database, which includes over a billion total of Japanese characters hand-written and reorganized by the National Institute of Advanced Industrial Science and Technology (AIST).<br><br>
+The data is from the [ETL Character Database](http://etlcdb.db.aist.go.jp/), which includes over a billion total of Japanese characters hand-written and reorganized by the [Japanese National Institute of Advanced Industrial Science and Technology (AIST)](https://www.aist.go.jp/), alongside the assistance of the [Japan Electronics & Information Technology Industries Association (JEITA)](http://www.jeita.or.jp/english/).<br><br>
 
 
 # Business Problem
@@ -102,7 +102,7 @@ After modeling each writing system, and experimenting with various parameters an
 
 # References
 * ELTCDB Data Set -- http://etlcdb.db.aist.go.jp/<br>
-* AIST -- http://www.aist.go.jp/index_e.html <br>
+* AIST -- https://www.aist.go.jp/<br>
 * JEITA -- http://www.jeita.or.jp/english/<br><br>
 
     
