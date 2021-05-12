@@ -69,6 +69,7 @@ The data was resized to 64x64 pixels for our CNN model to read over. A Tensorflo
 # Modeling & Results
 After our EDA and feature engineering we were ready to begin our modeling the process.<br>
 The data was trained on KNN and Random Forest shallow algorithms initially, and then a CNN and cuDNN model in the cloud using AWS' EC2 instance package. Environment was run in virtual machine using g4dn Nvidia Tesla GPU architecture.<br>
+
 Pre-merge our dataset sizes for modeling were:
 * Hiragana: 11,360 image classes 
 * Kanji: 139,680 images classes
