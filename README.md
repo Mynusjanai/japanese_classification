@@ -68,13 +68,17 @@ The data was resized to 64x64 pixels for our CNN model to read over. A Tensorflo
 
 # Modeling & Results
 After our EDA and feature engineering we were ready to begin our modeling the process.<br>
-The data was trained on a CNN model in the cloud using AWS' EC2 instance package. Environment was run in virtual machine using g4dn Nvidia Tesla GPU architecture.<br>
+The data was trained on KNN and Random Forest shallow algorithms initially, and then a CNN and cuDNN model in the cloud using AWS' EC2 instance package. Environment was run in virtual machine using g4dn Nvidia Tesla GPU architecture.<br>
 Pre-merge our dataset sizes for modeling were:
 * Hiragana: 11,360 image classes 
 * Kanji: 139,680 images classes
 * Katakana: 64,906 images classes<br>
-    
+
 After the merge, we had 214,946 images across 3 classes<br>
+
+#### Initial Class Imbalance<br>
+![class imbalance](./img/class_imb.png)<br><br>
+    
 
 After modeling each writing system, and experimenting with various parameters and hyperparameters, our results were as below:<br>
 |Model         |Description                          |Train Accuracy |Train Loss      |Validation Accuracy |Validation Loss |Test Accuracy |Test Loss |
