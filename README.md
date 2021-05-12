@@ -77,15 +77,15 @@ Pre-merge our dataset sizes for modeling were:
 After the merge, we had 214,946 images across 3 classes<br>
 
 After modeling each writing system, and experimenting with various parameters and hyperparameters, our results were as below:<br>
-|CNN Model  |Description                    |Accuracy       |Loss            |
-|:----------|:------------------------------|:--------------|:---------------|
-|Training   |12 layers, 8,491,555 parameters|99.79%         |0.68%           |
-|Validation |                               |99.40%         |3.2%            |
-|Test       |                               |99.73%         |0.9%            | 
-
+|Model         |Description                          |Train Accuracy |Train Loss      |Validation Accuracy |Validation Loss |Test Accuracy |Test Loss |
+|:-------------|:------------------------------------|:--------------|:---------------|:-------------------|:---------------|:-------------|:---------|
+|KNN           |n_neighbors=10, weights='distance'   |92.67%         |N/A             |92.75%              |N/A             |95.95%        |N/A       |
+|Random Forest |class_weight='balanced', max_depth=32|94.50%         |N/A             |94.48%              |N/A             |94.95%        |N/A       |
+|CNN           |12 layers, 8,491,555 parameters      |99.79%         |0.68%           |99.40%              |3.2%            |99.73%        |0.90%     |
+|cuDNN (Nvidia)|8 layers, 264,195 parameters         |99.95%         |0.017%          |99.55%              |0.027%          |99.48%        |0.019%    |
 
 #### Best Performing Model Architecture<br>
-![layers](./img/horizontal_live_model_cnn_train_layers.png)<br><br>
+![layers](./img/live_model_cnn_train_layers.png)<br><br>
 
     
 # Next Steps
