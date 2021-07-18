@@ -13,7 +13,7 @@ The data is from the [ETL Character Database](http://etlcdb.db.aist.go.jp/), whi
 # Business Problem
 Can a viable product model be created to accurately transcribe, read, and identify Japanese text for the archiving of important literary works? This can be used to preserve the surviving texts of endangered languages from the Ainu and Ryukyu minority groups in Japan.<br>
 
-Can this be expanded to create an accurate API that recognizes written Japanese characters for touchscreen devices (ie. dictionaries, translation apps). Target audience is Japanese and English research orgs, higher learning institutions, linguistic preservation societies, and language students.
+Can this be expanded to create an accurate API that recognizes written Japanese characters for touchscreen devices (ie. dictionaries, translation apps). The target audience is Japanese and English research orgs, higher learning institutions, linguistic preservation societies, and language students.
 <br><br>
 
 
@@ -22,13 +22,13 @@ Can this be expanded to create an accurate API that recognizes written Japanese 
 Kanji entered Japan in the 8th century via Chinese monks who also brought other traditions with them such as tea and Buddhism. Kanji is based on comparable Chinese characters that convey meaning from pictographic images.<br>
 
 <b>Hiragana:</b><br>
-Phonetic writing system taking the mostly curviture root aspects of some kanji characters to represent a phonetic representation of sounds. There are 46 individual hiragana characters used today (alongside 29 diphthongs).
+Phonetic writing system taking the mostly curvature root aspects of some kanji characters to represent a phonetic representation of sounds. There are 46 individual hiragana characters used today (alongside 29 diphthongs).
 
 <b>Katakana:</b><br>
-Much like hiragana, katakana is phonetically identical to hiragana. Katakana takes the angular aspects of some kanji characters and is mainly used for foreign words, onamatepeia, and sounds. Katakana contains the same amound of phonetic characters as hiragana.
+Much like hiragana, katakana is phonetically identical to hiragana. Katakana takes the angular aspects of some kanji characters and is mainly used for foreign words, onomatopoeia, and sounds. Katakana contains the same amount of phonetic characters as hiragana.
 
 <b>Kuzushiji:</b><br>
-A cursive writing style, over 3 million books, on a diverse array of topics such as literature, science, mathematics and cooking written in kuzushiji are preserved today. However, the standardization of Japanese textbooks known as the “Elementary School Order” in 1900, removed Kuzushiji from regular school curriculum, as modern japanese print became popular. As a result, most Japanese natives today cannot read books written or printed in kuzushiji just 120 years ago.<br><br>
+A cursive writing style, over 3 million books, on a diverse array of topics such as literature, science, mathematics, and cooking written in kuzushiji are preserved today. However, the standardization of Japanese textbooks known as the “Elementary School Order” in 1900, removed Kuzushiji from the regular school curriculum, as modern Japanese print became popular. As a result, most Japanese natives today cannot read books written or printed in kuzushiji just 120 years ago.<br><br>
 
 
 # Data
@@ -58,7 +58,7 @@ Each writer wrote 10 sheets (genkouyoushi) per data set.<br>
 
     
 # Data Cleaning & EDA
-The data was read in from binary, sorted and then saved to an npz file for further access and to model upon. The separate datasets were then merged into one to represent the full scope of the Japanese language. Once done and training labels were created, the data images were able to be rendered for inspection. <br>
+The data was read in from binary, sorted, and then saved to a .npz file for further access and to model upon. The separate datasets were then merged into one to represent the full scope of the Japanese language. Once done and training labels were created, the data images were able to be rendered for inspection. <br>
 ![merged_images](./img/merged_images.png)<br><br>
     
 
@@ -67,8 +67,8 @@ The data was resized to 64x64 pixels for our CNN model to read over. A Tensorflo
 
 
 # Modeling & Results
-After our EDA and feature engineering we were ready to begin our modeling the process.<br>
-The data was trained on KNN and Random Forest shallow algorithms initially, and then a CNN and cuDNN model in the cloud using AWS' EC2 instance package. Environment was run in virtual machine using g4dn Nvidia Tesla GPU architecture.<br>
+After our EDA and feature engineering, we were ready to begin our modeling the process.<br>
+The data was trained on KNN and Random Forest shallow algorithms initially, and then a CNN and cuDNN model in the cloud using AWS' EC2 instance package. The environment was run in a virtual machine using g4dn Nvidia Tesla GPU architecture.<br>
 
 Pre-merge our dataset sizes for modeling were:
 * Hiragana: 11,360 image classes 
@@ -81,7 +81,8 @@ After the merge, we had 214,946 images across 3 classes<br>
 ![class imbalance](./img/class_imb.png)<br><br>
     
 
-After modeling each writing system, and experimenting with various parameters and hyperparameters, our results were as below:<br>
+After modeling each writing system, and experimenting with various parameters and hyperparameters, our results were as below:
+<br>
 |Model         |Description                          |Train Accuracy |Train Loss      |Validation Accuracy |Validation Loss |Test Accuracy |Test Loss |
 |:-------------|:------------------------------------|:--------------|:---------------|:-------------------|:---------------|:-------------|:---------|
 |KNN           |n_neighbors=10, weights='distance'   |92.67%         |N/A             |92.75%              |N/A             |95.95%        |N/A       |
@@ -95,9 +96,9 @@ After modeling each writing system, and experimenting with various parameters an
     
 # Next Steps
 * Work with kuzushiji (Japanese cursive writing) KMINST dataset variations
-* OpenCV for live model image recognition using webcam
+* OpenCV for live model image recognition using a webcam
 * Expand model for touchscreen handwriting API integration for language education (iOS app)
-* The CUNY Endangered Language Initiative strives to preserve our dying languages around the world. Use model as a way to utilize computational linguistics and preserve precious texts and early written Japanese history<br><br>
+* The CUNY Endangered Language Initiative strives to preserve our dying languages around the world. Use the model as a way to utilize computational linguistics and preserve precious texts and early written Japanese history<br><br>
     
 
 # References
